@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: bubble sort takes longer than merge sort when the array is reversed
+
+sort2 uses: merge sort
+
+How do you know?: merge sort takes the shortest when array is reversed; also, it is faster than merge sort when the array is sorted
+
+sort3 uses: selection sort
+
+How do you know?: selection sort takes the longest even when the array is sorted

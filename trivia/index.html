@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                let correct_button = document.querySelector("#correct");
+                let incorrect_buttons = document.querySelectorAll(".incorrect");
+                let message = document.querySelector("#msg");
+                let message_f = document.querySelector("#frq-msg");
+                let input_btn = document.querySelector("#frq-btn");
+                let answer = document.querySelector("input");
+
+                correct_button.addEventListener("click", function(){
+                    correct_button.style.backgroundColor = "green";
+                    message.innerHTML = "Correct!";
+                })
+                for (let i = 0; i < incorrect_buttons.length; i++)
+                {
+                    incorrect_buttons[i].addEventListener("click", function(){
+                        incorrect_buttons[i].style.backgroundColor = "red";
+                        message.innerHTML = "Inorrect";
+                    })
+                }
+                input_btn.addEventListener("click", function(){
+                    if (answer.value == "euro" || answer.value == "Euro")
+                    {
+                        answer.style.backgroundColor = "green";
+                        message_f.innerHTML = "Correct!";
+                    }
+                    else
+                    {
+                        answer.style.backgroundColor = "red";
+                        message_f.innerHTML = "Inorrect";
+                    }
+                })
+
+            });
+
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>In which country is Madrid located?</h3>
+                <button class="incorrect">United States</button>
+                <button class="incorrect">South Korea</button>
+                <button id="correct">Spain</button>
+                <button class="incorrect">Colombia</button>
+                <p id="msg"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the name of European currency?</h3>
+                <input type="text">
+                <button id="frq-btn">Check Answer</button>
+                <p id="frq-msg"></p>
+
+            </div>
+        </div>
+    </body>
+</html>

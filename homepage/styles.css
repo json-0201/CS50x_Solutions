@@ -1,0 +1,25 @@
+#purple
+{
+    /* id */
+    color: purple;
+    font-weight: bold;
+}
+
+.summary
+{
+    /* class */
+    font: bold italic large serif;
+}
+
+h4
+{
+    /* tag */
+    color: red;
+    font: 24px/28px cursive;
+}
+
+#sum
+{
+    font-size: 28px;
+    color: blue;
+}

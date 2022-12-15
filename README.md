@@ -1,7 +1,7 @@
 <h2 align="center">
 This is CS50x<br>
 CS50’s Introduction to Computer Science<br>
-<span><h4>- Labs & Problem Sets</h4></span>
+<span><h6>- Labs & Problem Sets</h6></span>
 </h2>
 
 <p align="center">
